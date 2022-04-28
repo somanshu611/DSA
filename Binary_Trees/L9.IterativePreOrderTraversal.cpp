@@ -12,6 +12,8 @@
  * };
  */
 
+// D L R
+
 // Since Stack works on LIFO, we will have to insert first right and then left node
 // into the stack.
 class Solution {
