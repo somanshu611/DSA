@@ -55,7 +55,7 @@ public:
 // and this served as a check so that i don't traverse
 // the left subtree of the node again. In this approach, we are keeping a node which basically 
 // does the same thing. If node==NULL, then that means left subtree has been traversed. 
-//Now, it's time for right sub-tree.
+// Now, it's time for right sub-tree.
 
 class Solution {
 public:

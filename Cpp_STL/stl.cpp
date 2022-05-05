@@ -10,6 +10,7 @@ void print(vector<int> arr) {
     cout<<'\n';
 }
 void OnVector() {
+    vector<int> v; // empty vector
     swap(arr[0],arr[1]);
 
     next_permutation(arr.begin(),arr.begin()+3);
