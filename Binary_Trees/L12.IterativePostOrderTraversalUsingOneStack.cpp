@@ -33,6 +33,8 @@ struct TreeNode {
 // After all this process, a time will come where the node on the top of the stack will have no left or right refernce
 // in that case we will print(here pushing into ans vector) the value in the node and remove it from stack. 
 
+// This approach is not good since it modifies/alters the given tree.
+// And thus is not recommended.
 
 class Solution {
 public:
