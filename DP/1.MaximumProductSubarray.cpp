@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include<bits/stdc++.h>
+using namespace std;
 // App1 : Brute Force -> O(N^3)
 // App2 : Optimised Brute Force -> O(N^2) (Have a look at this)
 // App3 : Two Traversals -> O(N)
