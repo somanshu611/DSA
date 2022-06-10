@@ -1,0 +1,43 @@
+Topological sort defintion : 
+Let's say we have a list of all vertexs in graph. Then, lets say we order our list in such manner
+that if there is an edge [u->v] then 'u' should appear before v in that list after ordering.
+This is called topolical sort.
+
+Very imp : 
+A topolical sort can only be done of a DAG.
+Why? 
+1. For edge [u-v] in undirected graph, 'u' should appear before 'v' and 'v' should appear before
+'u'. This is impossible thus, undirected graphs go out the way.
+2. For cycle in directed graph(or any graph), lets say [x->y->z->x], then x,y,x can be in 
+topological order but then x again has to come after z, which is again impossible. 
+
+
+
+
+
+
+
+INTUITION FOR TOPOLOGICAL SORT ALGORITHM : 
+
+
+Consider this graph
+
+[5] -> [0] -> [4]
+ |             |
+ V             V
+[2] -> [3] -> [1]
+
+
+Now lets consider the path 2 -> 3 -> 4
+
+Our algorithm puts a vertex in the stack when each of it's adjacent nodes are finished visiting.
+So if you simulate the process with a stack then stack would look something like this : 
+2 -> top
+3 
+4
+From top to bottom our stack will be topolically sorted, it's very clear how stack is automatically
+topolically sorting.
+
+Also it doesn't matter which vertex is first visited when we iterate over visited array for dfs
+in main function. **The relative ordering of paths doesn't matter.**
+
