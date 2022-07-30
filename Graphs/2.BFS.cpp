@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 // BFS in a graph means visiting all adjacent nodes of a node first, and then moving onto
-// next nodse. 
+// next nodes. 
 // We make use of queue here too, like in trees. 
 
 // Also i ran this code in terminal without input.txt, and it works great. 

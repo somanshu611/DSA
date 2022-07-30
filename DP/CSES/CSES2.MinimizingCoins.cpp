@@ -10,6 +10,23 @@ using namespace std;
 // For example, if the coins are {1,5,7} and the desired sum is 11, an optimal solution is 
 // 5+5+1 which requires 3 coins.
 
+// 1≤n≤100
+// 1≤x≤106
+// 1≤ci≤106
+
+
+
+
+
+
+
+
+
+
+
+
+// IMP NOTE : HERE WE CAN USE ONE COIN REPEATEDLY.
+// And you have to minimize total coins used, not find ways.
 
 
 // SOLUTION:

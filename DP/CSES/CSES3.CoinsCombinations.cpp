@@ -15,8 +15,23 @@ using namespace std;
 // 2+2+3+2
 // 2+3+2+2
 // 3+2+2+2
+
 // CONSTRAINTS : 
 // 1<=n<=100,1<=x<=1e6, 1<=c[i]<=1e6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // SOLUTION :
 // dp[i] = for(j=1 till n) dp[i] = (dp[i]+dp[i-c[j]])%mod;
 

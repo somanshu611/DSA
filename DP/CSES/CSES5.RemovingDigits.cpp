@@ -5,7 +5,24 @@ using namespace std;
 // PROBLEM : 
 // You are given an integer n. On each step, you may subtract one of the digits 
 // from the number.
-// How many steps are required to make the number equal to 0?
+// How many steps are required to make the number equal to 0?(minimum)
+
+
+
+// 1≤n≤10^6
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // First Hand Observations : 
 // 1<=n<1e6 -> this means that it will be difficult to have 2d dp, probably we'll have to use 1d dp.
@@ -35,7 +52,7 @@ bool solve() {
             num/=10;
             mx=max(d,mx);
         }
-        dp[i]=dp[i-mx]+1;
+        dp[i]=dp[i-mx]+1; // only considering the max digit. 
   }
   cout<<dp[n]<<"\n";
   return 0;

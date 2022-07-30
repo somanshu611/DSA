@@ -6,6 +6,53 @@ using namespace std;
 #define fast_io ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 #define MOD 1000000007
 
+// The edit distance between two strings is the minimum number of operations required to transform one string into the other.
+
+// The allowed operations are:
+// Add one character to the string.
+// Remove one character from the string.
+// Replace one character in the string.
+// For example, the edit distance between LOVE and MOVIE is 2, because you can first replace L with M, and then add I.
+
+// Your task is to calculate the edit distance between two strings.
+
+
+// Constraints
+// 1≤n,m≤5000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 bool solve() {
     string s,t;cin>>s>>t; 
     int n = s.size(),m=t.size();

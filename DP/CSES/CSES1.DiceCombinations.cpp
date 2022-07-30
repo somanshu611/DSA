@@ -13,6 +13,14 @@ using namespace std;
 // 2+1
 // 3
 
+
+
+
+
+
+
+
+
 // SOLUTION : 
 // dp[i] = no. of ways dice can be thrown to make sum 'i'. 
 

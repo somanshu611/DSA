@@ -2,6 +2,42 @@
 using namespace std;
 #define fast_io ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 #define MOD 1000000007
+
+// Given an a×b rectangle, your task is to cut it into squares. 
+// On each move you can select a rectangle and cut it into two rectangles 
+// in such a way that all side lengths remain integers. 
+// What is the minimum possible number of moves?
+
+// Constraints
+// 1≤a,b≤500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 bool solve() {
     int a,b;cin>>a>>b ;

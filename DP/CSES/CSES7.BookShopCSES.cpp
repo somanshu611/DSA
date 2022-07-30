@@ -3,12 +3,46 @@ using namespace std;
 #define fast_io ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 #define MOD 1000000007
 
+// You are in a book shop which sells n different books. 
+// You know the price and number of pages of each book.
+
+// You have decided that the total price of your purchases will be at most x. 
+// What is the maximum number of pages you can buy? 
+// You can buy each book at most once.
+
+// 1≤n≤1000
+// 1≤x≤10^5
+// 1≤hi,si≤1000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // This is EXACTLY 0/1 knapsack classical dp problem. NO difference.
 
-// We have to maximise the number of pages. This falls in the pattern 1 of leetcode article.
+// We have to maximise the number of pages for given price x. 
+// This falls in the pattern 1 of leetcode article.
+
+// 1. Dp state definition : dp[i][j] = maximum pages you can purchase with price 'x'.
+// 2. Final answer : dp[n][x]
+// 3. recurrence relation : dp[i][j] = max(dp[i-1][j],dp[i-1][j-h[i]]+s[i])
 
 // Constraints are very imp observations here. 
 // 1<=x<=1e5, 
+
+
 
 bool solve() { // 2d dp typical solution.
     int n,x;
@@ -47,7 +81,7 @@ bool solve() { // use of only two vectors/rows
             cur[j] = prev[j];
             if(j-h[i]>=0) cur[j] = max(cur[j],prev[j-h[i]]+s[i]);
         }
-        prev= cur;
+        prev = cur;
     }
     cout<<cur[x]<<'\n';
     return 0;

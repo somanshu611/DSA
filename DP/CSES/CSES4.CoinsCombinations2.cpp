@@ -11,6 +11,16 @@ using namespace std;
 // 3+3+3
 // 2+2+2+3
 
+
+
+
+
+
+
+
+
+
+
 // SOLUTION : 
 // This is a classical 0/1 knapsack style problem.
 // Distint ordered ways is the key here.
